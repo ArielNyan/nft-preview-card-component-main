@@ -1,0 +1,107 @@
+@import 'config';
+@import 'responsive';
+
+
+body{
+    background-color: $main-bg;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    background-color: $white;
+    box-shadow: 0 0 1em hsl(215, 54%, 9%);
+    border-radius: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    background-color: $card-bg;
+
+    &__img{
+
+
+        img{
+            border-radius: 1rem;
+            display: flex;
+            width: 100%;
+        }
+
+        .overlay{
+            display: none;
+        }
+    }
+
+    &__text{
+
+        margin-top: 2rem;
+        h1{
+            padding-bottom: 1rem;
+            color: $white;
+        }
+        p{
+            padding-bottom: 1rem;
+            color: $soft-blue;
+        }
+    }
+
+    &__price{
+        display:flex;
+        align-items: center;
+
+        h1{
+            font-size: 1.2rem;
+            padding-left: 0.5rem;
+            color: $cyan;
+;
+        }
+        img.ethernum{
+            width: 1rem;
+        }
+        p{
+            display: flex;
+            margin-left: auto;
+            color: $soft-blue;
+            img{
+                width: 1.4rem;
+            }
+        }
+    }
+
+    &__creator{
+        display: flex;
+        border-top: 1px solid $white;
+        margin-top: 1rem;
+        padding: 1rem 0;
+        img{
+            width: 2rem;
+            margin-right: 1rem;
+        }
+        p{
+            display: flex;
+            align-items: center;
+            color: $soft-blue;
+
+            span{
+                color: $white;
+            }
+        }
+    }
+}
+
+    .attribution { 
+        width: fit-content;
+        font-size: 11px; 
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $soft-blue;
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .hidden{
+        visibility: hidden;
+    }
